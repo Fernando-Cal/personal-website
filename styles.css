@@ -1,0 +1,43 @@
+#nav-links {
+    display: flex;                      /* enable flexbox */
+    justify-content: center;            /* center li */
+    list-style: none;                   /* removes bullet points */
+    width: 100%;                        /* ensure the nav bar spans the full width */
+    text-decoration: none;
+}
+
+.nav-li-link {
+    padding: 0 3rem;                    /* space out all the links */
+}
+
+a {
+    text-decoration: none;              /* removes underline from link */
+    color: black;                       /* change the color of the links */
+}
+
+a:hover {
+    color: gray;                        /* change the color of the links on hover */
+}
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;                 /* makes the image circular */
+}
+
+.image-container img {
+    width: 100%;                        /* makes the image take up the whole container */
+    height: 100%;
+    object-fit: cover;                  /* Maintain image aspect ratio */
+    border-radius: 50%;                 /* makes the image circular */
+}
+
+#headline {
+    display: flex;
+    align-items: center;                /* vertically aligns items */
+    gap: 3rem;                          /* adds space between image and text */
+}
+
+#headline-info {
+    display: block;
+}
