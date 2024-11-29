@@ -1,3 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h3, h4, h5, h6 {
+    margin: 0; /* Remove any margins */
+    padding: 5px; /* Remove any padding */
+    line-height: 2; /* Tighten line spacing */
+}
+
+
 #nav-links {
     display: flex;                      /* enable flexbox */
     justify-content: center;            /* center li */
@@ -20,8 +31,8 @@ a:hover {
 }
 
 .image-container {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;                 /* makes the image circular */
 }
 
@@ -32,12 +43,36 @@ a:hover {
     border-radius: 50%;                 /* makes the image circular */
 }
 
+
 #headline {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
     display: flex;
-    align-items: center;                /* vertically aligns items */
-    gap: 3rem;                          /* adds space between image and text */
+    gap: 9rem;                          /* adds space between image and text */
+    align-items: center;            /* Align items to the top of the container */
+    justify-content: center;            /* center horizontally */
 }
 
 #headline-info {
-    display: block;
+    display: flex;                      /* enable flexbox */
+    flex-direction: column;             /* Stack elements vertically */
+}
+
+#buttons {
+    display: flex;
+}
+
+#about-me {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+
+
+#get-to-about-container {
+    text-align: center;
+    font-size: 1.5rem;
 }
