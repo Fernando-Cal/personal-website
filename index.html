@@ -7,53 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav id="desktop-nav">
-    <div class="logo">Fernando Martinez</div>
+<nav id="desktop-nav" role="navigation" aria-label="Main Navigation">
+    <p>Fernando Martinez</p>
     <div>
-        <ul class="ul" id="nav-links">
-            <li class="nav-li-link"><a href="#">About</a></li>
-            <li class="nav-li-link"><a href="#">Experience</a></li>
-            <li class="nav-li-link"><a href="#">Projects</a></li>
-            <li class="nav-li-link"><a href="#">Contact</a></li>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
 </nav>
-<div id="headline">
+<section id="headline">
     <div class="card-client">
         <div class="user-picture">
-            <img src="images/headshot.png" alt="headshot">
+            <img src="images/headshot.png" alt="Fernando Martinez's headshot">
         </div>
-        <div id="name-headliner">
-            <p class="name-client">
-                        <span>Student @ UC Berkeley
-                        </span>
-            </p>
-        </div>
-        <div class="social-media">
-            <a href="https://www.instagram.com/ferandomartinz/?next=%2F">
-                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                </svg>
-                <span class="tooltip-social">Instagram</span>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100071822809128">
-                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
-                </svg>
-                <span class="tooltip-social">Facebook</span>
-            </a>
-        </div>
+        <p class="name-client">Student @ UC Berkeley</p>
     </div>
-    <div id="headline-info">
+    <div>
         <h4>Hi,</h4>
         <h1>My name is Fernando</h1>
         <h3>Prev. @ Amazon, CMU | U.S. Army Cadet</h3>
         <ul class="example-2">
             <li class="icon-content">
-                <a
-                        href="https://www.linkedin.com/in/fernando-cal/"
-                        aria-label="LinkedIn"
-                        data-social="linkedin"
+                <a href="https://www.linkedin.com/in/fernando-cal/"
                 >
                     <div class="filled"></div>
                     <svg
@@ -95,8 +73,8 @@
             </li>
         </ul>
     </div>
-</div>
-<div id="get-to-about-container">
+</section>
+<div id="about-section-headliner">
     <h6>Get To Know More</h6>
     <h4>About Me</h4>
 </div>
@@ -106,7 +84,7 @@
     </div>
     <p>
         I am an Applied Mathematics major at UC Berkeley. My professional experience includes internships at
-        Amazon, where I implemented device-level metrics to measure Amazon Prime Sign Up visits and removing hard coded Prime plan attributes with a dynamic solution.
+        Amazon, where I implemented device-level metrics to measure Amazon Prime Sign Up visits and remove hard coded Prime plan attributes with a dynamic solution.
         An edtech startup, where I contributed over 1000+ lines of testing using Jest, and a research role at
         Carnegie Mellon, where I created a program to display the Cayleys Table for the mathematical group S3 using the tkinter library. Additionally I am cadet at my
         school's Army Reserve Officer Training Corps (ROTC), where I plan commission as a cyber warfare officer in the reserves.
@@ -114,14 +92,14 @@
         Chicago, LA, San Francisco, and Seattle.
     </p>
 </div>
-<div id="skills">
-    <div id="skills-headliner-container">
+<section id="experience">
+    <div>
         <h6>Explore My</h6>
         <h4>Experience</h4>
     </div>
     <div class="card">
         <div class="bg">
-            <ul class="ul" id="skills-list">
+            <ul>
                 <li>Python</li>
                 <li>Java</li>
                 <li>HTML</li>
@@ -130,7 +108,7 @@
         </div>
         <div class="blob"></div>
     </div>
-</div>
+</section>
 <footer>
     <p>fernandomartinez@berkeley.edu</p>
     <p>909-808-3077</p>
