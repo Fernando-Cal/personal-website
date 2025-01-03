@@ -1,4 +1,3 @@
-/* Show desktop navigation for screens 1024px and above */
 @media (max-width: 768px) {
     #desktop-nav {
         display: none; /* hide desktop nav */
@@ -11,6 +10,20 @@
     #hamburger-links.show {
         display: flex; /* Show links when toggled */
     }
+
+    #cal-logo-container {
+        display: none;
+    }
+
+
+    #about-paragraph-desktop {
+        display: none;
+    }
+
+    #about-paragraph-hamburger {
+        display: flex;
+    }
+
 }
 
 /* Show Desktop navigation for screens 1024px and above */
@@ -22,4 +35,14 @@
     #hamburger-menu {
         display: none; /* hide hamburger menu */
     }
+
+    #about-paragraph-desktop {
+        display: flex;
+    }
+
+    #about-paragraph-hamburger {
+        display: none;
+    }
+
+
 }
