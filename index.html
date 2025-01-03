@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Martinez</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media_queries.css">
 </head>
 <body>
 <nav id="desktop-nav" role="navigation" aria-label="Main Navigation">
     <p>Fernando Martinez</p>
     <div>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-section-headliner">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -49,7 +48,6 @@
                                 ></path>
                             </svg>
                 </a>
-                <div class="tooltip">LinkedIn</div>
             </li>
             <li class="icon-content">
                 <a href="https://github.com/Fernando-Cal" aria-label="GitHub" data-social="github">
@@ -69,7 +67,6 @@
                                 ></path>
                             </svg>
                 </a>
-                <div class="tooltip">GitHub</div>
             </li>
         </ul>
     </div>
@@ -82,34 +79,16 @@
     <div id="cal-logo-container">
         <img src="images/cal.png" alt="UC Berkeley logo">
     </div>
-    <p>
+    <p id="about-paragraph">
         I am an Applied Mathematics major at UC Berkeley. My professional experience includes internships at
-        Amazon, where I implemented device-level metrics to measure Amazon Prime Sign Up visits and remove hard coded Prime plan attributes with a dynamic solution.
-        An edtech startup, where I contributed over 1000+ lines of testing using Jest, and a research role at
-        Carnegie Mellon, where I created a program to display the Cayleys Table for the mathematical group S3 using the tkinter library. Additionally I am cadet at my
+        Amazon, an edtech startup and at
+        Carnegie Mellon. I am also a cadet at my
         school's Army Reserve Officer Training Corps (ROTC), where I plan commission as a cyber warfare officer in the reserves.
         Outside of academics and work, I enjoy running, collecting postcards, and traveling. Having explored cities like NYC,
         Chicago, LA, San Francisco, and Seattle.
     </p>
 </div>
-<section id="experience">
-    <div>
-        <h6>Explore My</h6>
-        <h4>Experience</h4>
-    </div>
-    <div class="card">
-        <div class="bg">
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-        <div class="blob"></div>
-    </div>
-</section>
-<footer>
+<footer id="contact">
     <p>fernandomartinez@berkeley.edu</p>
     <p>909-808-3077</p>
 </footer>

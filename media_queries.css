@@ -1,0 +1,67 @@
+/* Media Queries */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    #desktop-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    #headline {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .card-client {
+        width: 100%;
+    }
+
+    #about-me {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #desktop-nav {
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    #headline {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .example-2 {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    footer {
+        gap: 0.5rem;
+    }
+}
