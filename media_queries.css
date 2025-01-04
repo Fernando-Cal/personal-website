@@ -1,48 +1,85 @@
+/* For Mobile Screens: Max width 768px */
 @media (max-width: 768px) {
     #desktop-nav {
-        display: none; /* hide desktop nav */
+        display: none; /* Hide desktop navigation */
     }
 
     #hamburger-menu {
-        display: flex; /* show hamburger menu */
+        display: flex; /* Show hamburger menu */
+        flex-direction: column; /* Ensure links stack vertically */
+    }
+
+    #hamburger-links {
+        display: none; /* Hide links initially */
     }
 
     #hamburger-links.show {
         display: flex; /* Show links when toggled */
+        flex-direction: column;
+        gap: 1rem; /* Add space between links */
     }
 
     #cal-logo-container {
-        display: none;
+        display: none; /* Hide the Cal logo */
     }
 
-
     #about-paragraph-desktop {
-        display: none;
+        display: none; /* Hide desktop-specific content */
     }
 
     #about-paragraph-hamburger {
-        display: flex;
+        display: block; /* Show mobile-specific content */
+        padding: 1rem; /* Add padding for better spacing */
     }
-
 }
 
-/* Show Desktop navigation for screens 1024px and above */
+/* For Desktop Screens: Min width 1024px */
 @media (min-width: 1024px) {
     #desktop-nav {
-        display: flex; /* show desktop nav */
+        display: flex; /* Show desktop navigation */
+        justify-content: space-between;
+        align-items: center;
     }
 
     #hamburger-menu {
-        display: none; /* hide hamburger menu */
+        display: none; /* Hide hamburger menu */
     }
 
     #about-paragraph-desktop {
-        display: flex;
+        display: block; /* Show desktop-specific content */
     }
 
     #about-paragraph-hamburger {
-        display: none;
+        display: none; /* Hide mobile-specific content */
     }
 
+    #cal-logo-container {
+        display: block; /* Show Cal logo */
+        margin-left: auto;
+        margin-right: auto; /* Center align the logo */
+    }
+}
 
+/* For Tablets: Between 769px and 1023px */
+@media (min-width: 769px) and (max-width: 1023px) {
+    #desktop-nav {
+        display: flex; /* Show desktop navigation */
+    }
+
+    #hamburger-menu {
+        display: none; /* Hide hamburger menu */
+    }
+
+    #about-paragraph-desktop {
+        display: block; /* Show desktop-specific content */
+    }
+
+    #about-paragraph-hamburger {
+        display: none; /* Hide mobile-specific content */
+    }
+
+    #cal-logo-container {
+        display: block; /* Show Cal logo */
+        margin: 0 auto; /* Center align */
+    }
 }
