@@ -30,28 +30,76 @@
     #about-paragraph-hamburger {
         display: block; /* Show mobile-specific content */
         padding: 1rem; /* Add padding for better spacing */
+        font-size: 15px;
     }
+
+    .hi-intro {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 100%; /* Slightly narrower than small mobile for better readability */
+    }
+    #about-paragraph {
+        display: none;
+    }
+    #about-paragraph-mobile {
+        display: flex;
+        font-size: 14px; /* Smaller font size for mobile */
+        line-height: 1.4;
+        text-align: left; /* Align text to the left */
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        align-items: center;
+        font-size: 14px;
+    }
+}
+
+/* For Medium Screens: Between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: 60%; /* Increase width to 60% of the screen */
+        max-width: 600px; /* Set a larger max width */
+    }
+
+    #about-paragraph {
+        display: none;
+    }
+    #about-paragraph-mobile {
+        display: flex;
+        font-size: 14px; /* Smaller font size for mobile */
+        line-height: 1.4;
+        text-align: left; /* Align text to the left */
+    }
+
 }
 
 /* For Desktop Screens: Min width 1024px */
 @media (min-width: 1024px) {
     #desktop-nav {
         display: flex; /* Show desktop navigation */
-        justify-content: space-between;
-        align-items: center;
     }
 
     #hamburger-menu {
         display: none; /* Hide hamburger menu */
     }
 
-    #about-paragraph-desktop {
-        display: block; /* Show desktop-specific content */
+    .card {
+        width: 50%; /* Increase width to 50% of the screen */
+        max-width: 800px; /* Allow a wider card */
     }
 
-    #about-paragraph-hamburger {
-        display: none; /* Hide mobile-specific content */
+    #about-paragraph {
+        display: flex;
     }
+    #about-paragraph-mobile {
+        display: none;
+    }
+
 
     #cal-logo-container {
         display: block; /* Show Cal logo */
