@@ -361,4 +361,207 @@ footer {
     gap: 10rem;
 }
 
+/* DARK MODE TOGGLE */
 
+/* From Uiverse.io by andrew-demchenk0 */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+/* .switch:hover */.sun svg {
+                       animation: rotate 15s linear infinite;
+                   }
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .switch:hover */.moon svg {
+                       animation: tilt 5s linear infinite;
+                   }
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked + .slider {
+    background-color: #183153;
+}
+
+.input:focus + .slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color:#1e1e1e; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+/* Navigation Bar */
+#desktop-nav.dark-mode {
+    background-color: #1e1e1e; /* Dark background for the nav */
+}
+
+#desktop-nav.dark-mode p {
+    color: #ffffff;
+}
+
+.nav-links a.dark-mode {
+    color: #ffffff; /* Light text for links */
+}
+
+.nav-links a.dark-mode:hover {
+    color: #bbbbbb; /* Lighter hover color */
+}
+
+/* Headline Section */
+#headline.dark-mode {
+    background-color: #1e1e1e; /* Dark background for headline */
+    color: #ffffff; /* Light text for headline */
+}
+
+.card-client.dark-mode {
+    background-color: #2a2a2a; /* Dark background for cards */
+    color: #ffffff; /* Light text */
+    border: 4px solid #333;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); /* Darker shadow */
+}
+
+/* Footer */
+footer.dark-mode {
+    background-color: #1e1e1e; /* Dark footer */
+    color: #ffffff; /* Light text */
+}
+
+/* About Section */
+#about-me.dark-mode {
+    background-color: #1e1e1e; /* Dark background for about section */
+    color: #ffffff; /* Light text */
+}
+
+#about-section-headliner.dark-mode {
+    background-color: #1e1e1e; /* Match the rest of the dark mode background */
+    color: #ffffff; /* Ensure text remains visible */
+}
+
+
+.about-paragraph.dark-mode {
+    color: #cccccc; /* Slightly lighter text */
+}
+
+/* Dark Mode for Links */
+a.dark-mode {
+    color: #ffffff; /* Light links */
+}
+
+a.dark-mode:hover {
+    color: #bbbbbb; /* Lighter hover color */
+}
+
+/* Button Styles for Dark Mode */
+button.dark-mode {
+    background-color: #333333; /* Dark button background */
+    color: #ffffff; /* Light button text */
+    border: 1px solid #444;
+}
+
+button.dark-mode:hover {
+    background-color: #444444; /* Slightly lighter on hover */
+}
+
+#about-section-headliner.dark-mode {
+    background-color: #1e1e1e; /* Match the rest of the dark mode background */
+    color: #ffffff; /* Ensure text remains visible */
+}
+
+.card.dark-mode {
+    background: #555;
+    color: #ffffff; /* White text color */
+    border: 1px solid #333333; /* Subtle border for better visibility */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 3); /* Slight shadow */
+}
+
+.card.dark-mode p {
+    color: #ffffff;
+}
