@@ -483,6 +483,10 @@ body.dark-mode {
     background-color: #1e1e1e; /* Dark background for the nav */
 }
 
+#desktop-nav.dark-mode p {
+    color: #ffffff;
+}
+
 .nav-links a.dark-mode {
     color: #ffffff; /* Light text for links */
 }
@@ -549,4 +553,15 @@ button.dark-mode:hover {
 #about-section-headliner.dark-mode {
     background-color: #1e1e1e; /* Match the rest of the dark mode background */
     color: #ffffff; /* Ensure text remains visible */
+}
+
+.card.dark-mode {
+    background: #555;
+    color: #ffffff; /* White text color */
+    border: 1px solid #333333; /* Subtle border for better visibility */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 3); /* Slight shadow */
+}
+
+.card.dark-mode p {
+    color: #ffffff;
 }

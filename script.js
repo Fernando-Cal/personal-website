@@ -15,10 +15,10 @@ const elementsToToggle = [
     document.getElementById('desktop-nav'),
     document.getElementById('headline'),
     document.getElementById('about-me'),
-    document.getElementById('about-section-headliner'), // Added this line
+    document.getElementById('about-section-headliner'),
     document.querySelector('footer'),
     ...document.querySelectorAll('.nav-links a'),
-    ...document.querySelectorAll('.card-client'),
+    ...document.querySelectorAll('.card'), // Ensure this includes your card
 ];
 
 // Apply the saved theme on page load
